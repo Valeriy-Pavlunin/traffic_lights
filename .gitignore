@@ -1,0 +1,17 @@
+# Временные папки сборки STM32CubeIDE
+Debug/
+Release/
+
+# Логи и локальные настройки IDE
+*.log
+.settings/
+*.launch
+
+# Бинарники (результат компиляции)
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.su
+*.d

@@ -1,0 +1,18 @@
+#ifndef TRAFFIC_CONFIG_H
+#define TRAFFIC_CONFIG_H
+
+#define TIME_RED_PHASE          1000
+#define TIME_YELLOW_PHASE       500
+#define TIME_GREEN_PHASE        1000
+#define TIME_PEDESTRIAN_YELLOW  100
+#define TIME_PEDESTRIAN_TOTAL   1100
+#define TIME_BUTTON_DEBOUNCE    50
+
+#define PIN_LED_GREEN   3
+#define PIN_LED_YELLOW  4
+#define PIN_LED_RED     5
+#define PIN_BUZZER      6
+
+#define BSRR_RESET_OFFSET 16
+
+#endif
