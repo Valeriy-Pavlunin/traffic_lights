@@ -35,7 +35,7 @@ void TrafficLight() {
 	case GreenLight:
 		HW_SetLights_Green();
 		if (trafficc_light_timer - start_lighting >= TIME_GREEN_PHASE) {
-			state = RedLight;
+			state = YellowLight;
 			start_lighting = trafficc_light_timer;
 			traffic_direction = up;
 		}
@@ -58,7 +58,7 @@ void TrafficLight() {
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-	if (GPIO_Pin == (1 << PIN_BUZZER)) {
+	if (GPIO_Pin == (1 << 7)) {
 		if (button_rattle_timer - last_button_click >= TIME_BUTTON_DEBOUNCE) {
 			state = PedestrianPhase;
 			last_button_click = button_rattle_timer;
