@@ -58,7 +58,7 @@ void TrafficLight() {
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-	if (GPIO_Pin == (1 << 7)) {
+	if (GPIO_Pin == (1 << PIN_BUTTON)) {
 		if (button_rattle_timer - last_button_click >= TIME_BUTTON_DEBOUNCE) {
 			state = PedestrianPhase;
 			last_button_click = button_rattle_timer;
